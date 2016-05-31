@@ -1,0 +1,21 @@
+{
+    "name": "mztest/yii2-single-file-upload",
+    "description": "Single file upload extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "mztest",
+            "email": "mztester@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mztest\\singleFileUpload\\": ""
+        }
+    }
+}

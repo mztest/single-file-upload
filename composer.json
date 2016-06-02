@@ -3,6 +3,7 @@
     "description": "Single file upload extension",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
+    "homepage": "https://github.com/mztest/yii2-single-file-upload",
     "license": "BSD-3-Clause",
     "authors": [
         {

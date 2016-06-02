@@ -13,7 +13,7 @@ use yii\helpers\FileHelper;
 use yii\web\Response;
 use yii\web\UploadedFile;
 
-class JqueryFileUploadAction extends Action
+class SingleFileUploadAction extends Action
 {
     public $uploadFolder = 'upload';
 

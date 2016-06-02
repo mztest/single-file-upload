@@ -7,7 +7,7 @@
  */
 namespace mztest\singleFileUpload;
 
-use mztest\singleFileUpload\assets\JqueryFileUploadAsset;
+use mztest\singleFileUpload\assets\SingleFileUploadAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -42,7 +42,7 @@ class SingleFileUpload extends InputWidget
     {
 
         $view = $this->getView();
-        JqueryFileUploadAsset::register($view);
+        SingleFileUploadAsset::register($view);
         $view->registerJs("$('#".$this->getFileInputId()."').fileupload({
             url: '". $this->uploadAction ."',
             dataType: 'json',

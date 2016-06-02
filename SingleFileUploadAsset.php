@@ -10,7 +10,7 @@ namespace mztest\singleFileUpload\assets;
 
 use yii\web\AssetBundle;
 
-class JqueryFileUploadAsset extends AssetBundle
+class SingleFileUploadAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/blueimp/jquery-file-upload';
     public $css = [

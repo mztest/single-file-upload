@@ -6,7 +6,7 @@
  * Time: 下午2:57
  */
 
-namespace mztest\singleFileUpload\assets;
+namespace mztest\singleFileUpload;
 
 use yii\web\AssetBundle;
 

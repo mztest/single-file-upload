@@ -24,8 +24,35 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
+1. Define your web base url aliase '@frontendWeb'
+
+```php
+Yii::setAlias('@frontendWeb', 'http://your.domain.com');
+```
+
+2. Set upload action
+```php
+public function actions()
+    {
+        return [
+            'upload' => [
+                'class' => 'mztest\singleFileUpload\actions\SingleFileUploadAction',
+                'uploadFolder' => 'your relative upload folder name.',
+            ],
+        ];
+    }
+```
 
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \mztest\singleFileUpload\SingelFileUpload::widget(); ?>```
+<?= \mztest\singleFileUpload\SingelFileUpload::widget(); ?>
+```
+
+or
+
+```php
+<?= $form->field($model, 'floor_image')->widget(SingleFileUpload::className(), [
+    'uploadAction' => ['upload']
+]) ?>
+```

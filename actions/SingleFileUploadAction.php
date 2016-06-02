@@ -28,8 +28,6 @@ class SingleFileUploadAction extends Action
     public function init()
     {
         $this->uploadBasePath = $this->uploadBasePath .'/'. $this->uploadFolder;
-        // $this->uploadBaseUrl = $this->uploadBaseUrl .'/'. $this->uploadFolder;
-
         $this->relativeBaseUrl = $this->relativeBaseUrl .'/'. $this->uploadFolder;
 
         parent::init();

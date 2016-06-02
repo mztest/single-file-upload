@@ -7,7 +7,7 @@
  */
 namespace mztest\singleFileUpload;
 
-use mztest\singleFileUpload\assets\SingleFileUploadAsset;
+use mztest\singleFileUpload\SingleFileUploadAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;

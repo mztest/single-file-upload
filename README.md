@@ -30,7 +30,8 @@ Usage
 Yii::setAlias('@frontendWeb', 'http://your.domain.com');
 ```
 
-2. Set upload action
+2. Set upload action at your controller
+
 ```php
 public function actions()
     {
@@ -43,7 +44,7 @@ public function actions()
     }
 ```
 
-Once the extension is installed, simply use it in your code by  :
+3. simply use it in your code by  :
 
 ```php
 <?= \mztest\singleFileUpload\SingelFileUpload::widget(); ?>

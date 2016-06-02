@@ -25,35 +25,35 @@ to the require section of your `composer.json` file.
 Usage
 -----
 1. Define your web base url aliase '@frontendWeb'
-
-```php
-Yii::setAlias('@frontendWeb', 'http://your.domain.com');
-```
+    
+    ```php
+    Yii::setAlias('@frontendWeb', 'http://your.domain.com');
+    ```
 
 2. Set upload action at your controller
-
-```php
-public function actions()
-    {
-        return [
-            'upload' => [
-                'class' => 'mztest\singleFileUpload\actions\SingleFileUploadAction',
-                'uploadFolder' => 'your relative upload folder name.',
-            ],
-        ];
-    }
-```
+    
+    ```php
+    public function actions()
+        {
+            return [
+                'upload' => [
+                    'class' => 'mztest\singleFileUpload\actions\SingleFileUploadAction',
+                    'uploadFolder' => 'your relative upload folder name.',
+                ],
+            ];
+        }
+    ```
 
 3. simply use it in your code by  :
 
-```php
-<?= \mztest\singleFileUpload\SingelFileUpload::widget(); ?>
-```
+    ```php
+    <?= \mztest\singleFileUpload\SingelFileUpload::widget(); ?>
+    ```
 
-or
+    or
 
-```php
-<?= $form->field($model, 'floor_image')->widget(SingleFileUpload::className(), [
-    'uploadAction' => ['upload']
-]) ?>
-```
+    ```php
+    <?= $form->field($model, 'floor_image')->widget(SingleFileUpload::className(), [
+        'uploadAction' => ['upload']
+    ]) ?>
+    ```

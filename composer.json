@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mztest\\upload\\": ""
+            "mztest\\singleFileUpload\\": ""
         }
     }
 }

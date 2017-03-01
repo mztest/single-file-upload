@@ -2,6 +2,10 @@ Single file upload extension
 ============================
 Single file upload extension
 
+This package is deprecated
+--------------------------
+This package is deprecated. All the features were integrated into [mztest/yii2-widget-file-upload](https://github.com/mztest/yii2-widget-file-upload)
+
 Installation
 ------------
 
